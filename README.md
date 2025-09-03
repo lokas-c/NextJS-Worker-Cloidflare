@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Create an Next.js application and deploy it to Cloudflare Workers
 
-## Getting Started
+Deploy your Next.js app to Cloudflare Workers using the OpenNext adapter.
 
-First, run the development server:
+## Next.js supported features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Most Next.js features are supported by the Cloudflare OpenNext adapter:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Feature | Cloudflare adapter | Notes |
+| - | - | - |
+| App Router | 🟢 supported | |
+| Pages Router | 🟢 supported | |
+| Route Handlers | 🟢 supported | |
+| React Server Components | 🟢 supported | |
+| Static Site Generation (SSG) | 🟢 supported | |
+| Server-Side Rendering (SSR) | 🟢 supported | |
+| Incremental Static Regeneration (ISR) | 🟢 supported | |
+| Server Actions | 🟢 supported | |
+| Response streaming | 🟢 supported | |
+| asynchronous work with `next/after` | 🟢 supported | |
+| Middleware | 🟢 supported | |
+| Image optimization | 🟢 supported | Supported via [Cloudflare Images](https://developers.cloudflare.com/images/) |
+| Partial Prerendering (PPR) | 🟢 supported | PPR is experimental in Next.js |
+| Composable Caching ('use cache') | 🟢 supported | Composable Caching is experimental in Next.js |
+| Node.js in Middleware | ⚪ not yet supported | Node.js middleware introduced in 15.2 are not yet supported |
